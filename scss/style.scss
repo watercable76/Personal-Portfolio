@@ -1,0 +1,45 @@
+// predefined colors and other important info
+
+
+// body stying
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 1.5rem;
+}
+
+// navigation styling
+header {
+    margin: 0;
+    padding: 1.5rem;
+    height: 12%;
+    background-color: #7d7e81;
+    width: 100%;
+    font-size: 18px;
+}
+
+
+// link styling
+ol, ul {
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover, a:active {
+        text-decoration: none;
+        color: #ce092a;
+    }
+}
+
+ul li {
+    list-style: none;
+}
+
+// content styling
+p {
+    font-size: 14px;
+}

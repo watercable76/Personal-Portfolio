@@ -1,0 +1,11 @@
+{
+    "name": "personal-portfolio-wdd-330",
+    "version": "1.0.0",
+    "description": "Front end development course personal portfolio",
+    "main": "index.html",
+    "scripts": {
+        "update-css": "sass scss/style.scss css/style.css"
+    },
+    "author": "Nicholas Cable",
+    "license": "ISC"
+}
