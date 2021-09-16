@@ -44,6 +44,15 @@ the second file is the name you want to give to your new file
 
 <p>&nbsp;</p>
 
+## Popular Git Commands  
+
+* git commit -m "message"
+  - Commits and added a message to your files getting committed
+* git add (filename) || . (everything)
+  - Stages your file or files to be ready to commit
+* git push
+  - Push changes to branch
+
 To access your folder structure like the one listed above, type *__tree__* in your terminal. This will print  
 the folder structure to your terminal where you can copy it and use it in the future.  
 
@@ -52,3 +61,5 @@ the folder structure to your terminal where you can copy it and use it in the fu
 ## Useful Articles  
 
 Once I find more useful articles and other important topics, I will list them here.  
+
+[Git Commands](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)  
