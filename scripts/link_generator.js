@@ -3,7 +3,7 @@
 var links = [
     {
         label: "Week1 notes",
-        url: "week1/week01-notes.html"
+        url: "https://watercable76.github.io/Personal-Portfolio/week01/week01-notes.html"
     }
 ];
 
