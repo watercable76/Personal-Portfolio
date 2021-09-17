@@ -15,6 +15,9 @@ header {
   width: 100%;
   font-size: 18px;
 }
+header ul li {
+  list-style: none;
+}
 
 ol a, ul a {
   text-decoration: none;
@@ -25,12 +28,12 @@ ol a:hover, ol a:active, ul a:hover, ul a:active {
   color: #ce092a;
 }
 
-ul li {
-  list-style: none;
-}
-
 p {
   font-size: 14px;
+}
+
+.notes {
+  margin: 16px 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

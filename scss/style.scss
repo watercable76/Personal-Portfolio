@@ -19,6 +19,10 @@ header {
     background-color: #7d7e81;
     width: 100%;
     font-size: 18px;
+
+    ul li {
+        list-style: none;
+    }
 }
 
 
@@ -35,11 +39,11 @@ ol, ul {
     }
 }
 
-ul li {
-    list-style: none;
-}
-
 // content styling
 p {
     font-size: 14px;
+}
+
+.notes {
+    margin: 16px 8px;
 }
