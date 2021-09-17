@@ -9,14 +9,24 @@ main {
 
 header {
   margin: 0;
-  padding: 1.5rem;
   height: 12%;
   background-color: #7d7e81;
   width: 100%;
   font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+header ul {
+  display: flex;
 }
 header ul li {
   list-style: none;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+header ul a:hover, header ul a:active {
+  text-decoration: none;
+  color: white;
 }
 
 ol a, ul a {
@@ -25,7 +35,7 @@ ol a, ul a {
 }
 ol a:hover, ol a:active, ul a:hover, ul a:active {
   text-decoration: none;
-  color: #ce092a;
+  color: #ce0022;
 }
 
 p {
