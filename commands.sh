@@ -1,8 +1,9 @@
 #!/bin/sh
-echo 'Hello world'
-
 git add *
 
-git commit -m "Added a new bash file"
+echo "What is the commit message: "
+read -r message
+
+git commit -m "'$message'"
 
 git push origin master
