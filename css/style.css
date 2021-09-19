@@ -38,6 +38,11 @@ ol a:hover, ol a:active, ul a:hover, ul a:active {
   color: #ce0022;
 }
 
+#li-dots {
+  font-size: 40px;
+  list-style: none;
+}
+
 p {
   font-size: 14px;
 }
