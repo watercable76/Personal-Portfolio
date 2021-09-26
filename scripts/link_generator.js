@@ -12,6 +12,10 @@ var links = [
     {
         label: "Week2 notes",
         url: "week02/week02-notes.html"
+    },
+    {
+        label: "Week3 notes",
+        url: "week03/week03-notes.html"
     }
 ];
 

@@ -43,6 +43,10 @@ ol a:hover, ol a:active, ul a:hover, ul a:active {
   list-style: none;
 }
 
+#colored-content {
+  cursor: pointer;
+}
+
 p {
   font-size: 14px;
 }
