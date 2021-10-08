@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week04 Notes and Stuff</title>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- JS links -->
+    <script src="../scripts/link_generator.js"></script>
+    <script src="./week04-script.js"></script>
+</head>
+
+<body>
+    <header>
+        <ul id="linked-list"></ul>
+    </header>
+    <main>
+        <h1>Week04 Notes</h1>
+        <p>Notes from the week's lesson and review from old material</p>
+        <br>
+        <div class="notes">
+            <h2>JS Forms</h2>
+            <form name="data" id="data">
+                <label for="name">
+                    Please enter your name here:
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </label>
+                <button type="submit">Click Me</button>
+            </form>
+            <label for='City'>Base of Operations:
+                <select name='city' id='city'>
+                    <option value='' selected>Choose a City</option>
+                    <option value='Metropolis'>Metropolis</option>
+                    <option value='Gotham City'>Gotham City</option>
+                    <option value='Keystone City'>Keystone City</option>
+                    <option value='Coast City'>Coast City</option>
+                    <option value='Star City'>Star City</option>
+                </select>
+            </label>
+        </div>
+        <div class="notes">
+            <h2>OO Programming</h2>
+            <button onclick="buttonClick()">Output Data</button>
+            <div>
+                <p>You are going down a dark cave. Click the button to roll for initiative: <span id="outputData"></span></p>
+            </div>
+        </div>
+        <div class="notes">
+            <h2>Modular JS</h2>
+            <p>Organizing code by purpose will make reusing and setting code more efficient. You can write code for one thing in 
+                one area, and then reuse that code in the entire project. For example, I have the link link generator code in the 
+                main directory of this project so I can call it in all the files in this project.
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>
