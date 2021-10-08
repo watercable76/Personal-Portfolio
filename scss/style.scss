@@ -27,6 +27,7 @@ header {
 
     ul {
         display: flex;
+        flex-wrap: wrap;
 
         li {
             list-style: none;
@@ -72,4 +73,46 @@ p {
 
 .notes {
     margin: 16px 8px;
+}
+
+
+// styling for midterm project content
+
+
+.card {
+    width: 90%;
+    border: 2px solid black;
+    padding: 8px;
+    margin: 12px;
+
+    &__item {
+        list-style: none;
+        margin: 0 0.5rem;
+        padding: 2rem;
+    }
+}
+
+// figure out how to write the CSS to create two lines that become an X
+.big_x {
+    color: #ce0022;
+    font-size: 30px;
+    padding: 4px;
+    margin: 0 2rem;
+}
+
+@media (min-width: 640px) and (max-width: 1079px) {
+    .card {
+        width: 500px;
+
+        &__item {
+            margin: 0 1rem;
+            padding: 1rem;
+        }
+    }
+}
+
+@media (min-width: 1080px) {
+    .card {
+        width: 800px;
+    }
 }
