@@ -57,22 +57,28 @@ p {
 }
 
 .card {
-  width: 90%;
   border: 2px solid black;
-  padding: 8px;
-  margin: 12px;
+}
+.card ul {
+  margin: 0;
+  padding: 0;
 }
 .card__item {
   list-style: none;
-  margin: 0 0.5rem;
-  padding: 2rem;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 5px solid black;
+}
+.card__todo_items {
+  margin-left: 16px;
 }
 
 .big_x {
   color: #ce0022;
   font-size: 30px;
-  padding: 4px;
-  margin: 0 2rem;
+  padding: 8px;
+  margin-left: auto;
 }
 
 @media (min-width: 640px) and (max-width: 1079px) {
@@ -80,7 +86,6 @@ p {
     width: 500px;
   }
   .card__item {
-    margin: 0 1rem;
     padding: 1rem;
   }
 }
