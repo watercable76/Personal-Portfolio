@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week05 Notes and Stuff</title>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- JS links -->
+    <script src="../scripts/link_generator.js"></script>
+</head>
+
+<body>
+    <header>
+        <ul id="linked-list"></ul>
+    </header>
+    <main>
+        <h1>Week05 Notes</h1>
+        <p>Notes from the week's lesson and review from old material</p>
+        <br>
+        <div class="notes">
+            <h2>Debugging</h2>
+            <p>
+                Debugging can be done with a variety of sources. You can use console.log(),
+                developer tools, and even built-in JS methods to help with debugging.
+            </p>
+            <p>
+                My personal favorite is using console.log() in order to find out what
+                data is being used and what is being output.
+            </p>
+        </div>
+        <div class="notes">
+            <h2>Exception Handling</h2>
+            <p>
+                One great tool is exception handling. This is used to check for events which will be an exception,
+                like handling input from the user as a float, but they input a long instead. This may cause issues
+                and we can find ways to take care of this. Using a try-catch will allow the program to attempt an
+                operation, but will catch any issue and give that to us so we can manipulate it at that moment.
+            </p>
+            <p>
+                For example, we can try to convert data from one type to another, and instead of the code catching,
+                we will throw an exception which will handle that bad data. Converting 'hello_World' to a float 
+                will not break the code, but an error can be thrown to the screen so the user understands
+                their input needs to be a numeric value.
+            </p>
+        </div>
+        <div class="notes">
+            <h2>Test Driven Development</h2>
+            <p>
+                Writing code and writing tests for that code will make the deployment process much quicker
+                than just writing code. CICD is Continuous Integration - Continuous Development. This refers to 
+                the way code is developed and deployed. Code that is always tested as it is written allows the 
+                developers to find and remove bugs in their code quicker. 
+            </p>
+            <p>
+                For example, if I am deploying to GitHub, and I want to verify that my code is functional
+                before deploying it, there are some tests I can write to check for this. This will allow the
+                project to always be compiling before accepting new changes, which will ensure code is at least
+                somewhat functional before the code is running on production level.
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>
