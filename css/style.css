@@ -74,6 +74,10 @@ p {
   margin-left: 16px;
 }
 
+.input-container {
+  margin-top: 60px;
+}
+
 .big_x {
   color: #ce0022;
   font-size: 30px;
@@ -90,7 +94,7 @@ p {
   }
 }
 @media (min-width: 1080px) {
-  .card {
+  .card, .input-container {
     width: 800px;
   }
 }
