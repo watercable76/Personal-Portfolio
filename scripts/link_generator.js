@@ -28,6 +28,10 @@ var links = [
     {
         label: "Midterm Project",
         url: "midterm/mid-term.html"
+    },
+    {
+        label: "Week7 notes",
+        url: "week07/week07-notes.html"
     }
 ];
 
