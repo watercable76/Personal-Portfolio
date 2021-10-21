@@ -37,15 +37,6 @@ convertContent = (task) => {
 }
 
 
-function checkBox() {
-    if (this.value == "") {
-        this.value = "X";
-    } else {
-        this.value = "";
-    }
-}
-
-
 // set the type of item to store a json object, then call that JSON and update it
 // every time you change items in there
 // localStorage.setItem('myCat', 'Tom');
@@ -88,12 +79,12 @@ document.addEventListener('load', () => {
     // create the elements
     const ol = document.getElementById('task-list');
 
-    const ls = localStorage.getItem('active');
-    ls = ls ? ls : [];
+    const ls = localStorage.getItem('active'); console.log(ls);
+    // check if there are items stored, then call that data
+    ls = ls ? ls.split(',') : [];
 
     for (const i in ls) {
-        const li = document.createElement('li');
-        li.textContent = i;
+        const li = convertContent(i);
         ol.appendChild(li);
     }
 });
