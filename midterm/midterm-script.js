@@ -9,7 +9,17 @@ convertContent = (task) => {
     btn.setAttribute('type', 'button');
     btn.className = 'checkbox-btn';
     btn.innerHTML = ' ';
-    btn.onclick = checkBox();
+    btn.addEventListener('click', (event) => {
+        console.log(event);
+        // set itself to value here
+        if (event.target.innerHTML === " ") {
+            event.target.innerHTML = "X";
+            event.target.nextElementSibling.setAttribute('class', 'crossed-text');
+        } else {
+            event.target.innerHTML = " ";
+            event.target.nextElementSibling.classList.remove('crossed-text');
+        }
+    });
 
     var p = document.createElement('p');
     p.innerHTML = task;
@@ -27,16 +37,20 @@ convertContent = (task) => {
 
 
 function checkBox() {
-    return 'data';
+    if (this.value == "") {
+        this.value = "X";
+    } else {
+        this.value = "";
+    }
 }
 
 
 // set the type of item to store a json object, then call that JSON and update it
 // every time you change items in there
-localStorage.setItem('myCat', 'Tom');
-const cat = localStorage.getItem('myCat');
-localStorage.removeItem('myCat');
-localStorage.clear();
+// localStorage.setItem('myCat', 'Tom');
+// const cat = localStorage.getItem('myCat');
+// localStorage.removeItem('myCat');
+// localStorage.clear();
 
 
 // on submit of the input element
@@ -48,15 +62,13 @@ function updateTasks() {
         alert('Please enter a value in the text box!');
         return 0;
     } else {
-        console.log(data);
-
         // update the local storage items
         var cur_data = localStorage.getItem('active');
         cur_data = cur_data ? cur_data.split(',') : [];
 
-        cur_data.push(data); console.log(cur_data);
+        cur_data.push(data);
 
-        localStorage.setItem('active', cur_data.toString()); console.log(localStorage);
+        localStorage.setItem('active', cur_data.toString());
 
         document.getElementById('task').value = "";
 
