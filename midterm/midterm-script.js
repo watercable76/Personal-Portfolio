@@ -23,6 +23,7 @@ convertContent = (task) => {
 
     var p = document.createElement('p');
     p.innerHTML = task;
+    p.setAttribute('class', 'task-data');
 
     var div = document.createElement('div');
     div.className = 'big_x';
