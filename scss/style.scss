@@ -1,6 +1,7 @@
 // predefined colors and other important info
-$red-link: #ce0022;
-$white-link: rgb(255, 255, 255);
+$red-color: #ce0022;
+$gray-color: #f1f1f1;
+$dark-gray-color: #7d7e81;
 
 
 // body stying
@@ -18,7 +19,7 @@ header {
     margin: 0;
     // padding: 1.5rem;
     height: 12%;
-    background-color: #7d7e81;
+    background-color: $dark-gray-color;
     width: 100%;
     font-size: 18px;
 
@@ -37,10 +38,16 @@ header {
 
         a:hover, a:active {
             text-decoration: none;
-            color: $white-link;
+            color: $gray-color;
         }
     }
 
+}
+
+
+// footer styling
+footer {
+    padding: 16px;
 }
 
 
@@ -53,7 +60,7 @@ ol, ul {
 
     a:hover, a:active {
         text-decoration: none;
-        color: $red-link;
+        color: $red-color;
     }
 }
 
@@ -73,6 +80,7 @@ p {
 
 .task-data {
     font-size: 16px;
+    margin-right: auto;
 }
 
 .crossed-text {
@@ -112,6 +120,13 @@ p {
     margin-top: 60px;
 }
 
+// button styling
+.btn {
+    border-radius: 12%;
+    cursor: pointer;
+}
+
+
 .checkbox-btn {
     width: 50px;
     height: 50px;
@@ -119,12 +134,20 @@ p {
     font-size: 24px;
 }
 
-// figure out how to write the CSS to create two lines that become an X
+.checkbox-btn:hover {
+    background-color: $dark-gray-color;
+    color: $gray-color;
+}
+
 .big_x {
-    color: #ce0022;
+    color: $red-color;
     font-size: 30px;
     padding: 8px;
-    margin-left: auto;
+}
+
+.big_x:hover {
+    background-color: $red-color;
+    color: $gray-color;
 }
 
 @media (min-width: 640px) and (max-width: 1079px) {

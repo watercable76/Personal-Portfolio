@@ -27,7 +27,11 @@ header ul li {
 }
 header ul a:hover, header ul a:active {
   text-decoration: none;
-  color: white;
+  color: #f1f1f1;
+}
+
+footer {
+  padding: 16px;
 }
 
 ol a, ul a {
@@ -54,6 +58,7 @@ p {
 
 .task-data {
   font-size: 16px;
+  margin-right: auto;
 }
 
 .crossed-text {
@@ -86,6 +91,11 @@ p {
   margin-top: 60px;
 }
 
+.btn {
+  border-radius: 12%;
+  cursor: pointer;
+}
+
 .checkbox-btn {
   width: 50px;
   height: 50px;
@@ -93,11 +103,20 @@ p {
   font-size: 24px;
 }
 
+.checkbox-btn:hover {
+  background-color: #7d7e81;
+  color: #f1f1f1;
+}
+
 .big_x {
   color: #ce0022;
   font-size: 30px;
   padding: 8px;
-  margin-left: auto;
+}
+
+.big_x:hover {
+  background-color: #ce0022;
+  color: #f1f1f1;
 }
 
 @media (min-width: 640px) and (max-width: 1079px) {
