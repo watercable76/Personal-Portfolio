@@ -25,13 +25,16 @@
         <br>
         <div class="card">
             <ul class="task-list" id="task-list"></ul>
-            <div>Icons to choose to display certain data and num of tasks left</div>
+            <div><span id="task-qty">0</span> of tasks left</div>
         </div>
+    </main>
+    <footer>
         <div class="input-container">
             <input class="task-input" id="task" type="text" placeholder="Enter your task here">
             <button type="button" onclick="updateTasks()">+</button>
+            <button type="button" onclick="clearTasks()">Clear Tasks</button>
         </div>
-    </main>
+    </footer>
 </body>
 
 </html>
