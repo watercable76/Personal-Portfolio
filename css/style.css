@@ -86,6 +86,29 @@ p {
 .card__todo_items {
   margin-left: 16px;
 }
+.card__task-filter {
+  padding: 8px;
+  display: flex;
+}
+.card__task-filter .task-info {
+  margin-right: auto;
+}
+.card__active-items {
+  display: flex;
+  flex-direction: row;
+}
+.card__active-items span {
+  padding: 12px;
+  margin-right: 32px;
+}
+.card__active-items span:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border-radius: 6%;
+}
+.card__active-items .active {
+  border: 2px solid black;
+}
 
 .input-container {
   margin-top: 60px;

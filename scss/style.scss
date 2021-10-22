@@ -114,6 +114,35 @@ p {
     &__todo_items {
         margin-left: 16px;
     }
+
+    &__task-filter {
+        padding: 8px;
+        display: flex;
+
+        .task-info {
+            margin-right: auto;
+        }
+    }
+
+    &__active-items {
+        display: flex;
+        flex-direction: row;
+
+        span {
+            padding: 12px;
+            margin-right: 32px;
+        }
+
+        span:hover {
+            cursor: pointer;
+            background-color: $gray-color;
+            border-radius: 6%;
+        }
+
+        .active {
+            border: 2px solid black;
+        }
+    }
 }
 
 .input-container {
