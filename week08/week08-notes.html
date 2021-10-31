@@ -8,10 +8,10 @@
     <title>Week08 Notes and Stuff</title>
     <!-- CSS links -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./transform-styles.css">
 
     <!-- JS links -->
     <script src="../scripts/link_generator.js"></script>
-    <script src="./week07-script.js"></script>
 </head>
 
 <body>
@@ -19,23 +19,44 @@
         <ul id="linked-list"></ul>
     </header>
     <main>
-        <h1>Week07 Notes</h1>
+        <h1>Week08 Notes</h1>
         <p>Notes from the week's lesson and review from old material</p>
         <br>
         <div class="notes">
-            <h2>OO Programming</h2>
-            <button onclick="buttonClick()">Output Data</button>
+            <h2>CSS Transforms</h2>
             <div>
-                <p>You are going down a dark cave. Click the button to roll for initiative: <span id="outputData"></span></p>
+                <p class="css-content new-border">
+                    CSS styling has become more efficient than client-side JS, so devs are using it more at times for specific
+                    tasks. Adding content to the page, ensuring styling is set for content, and even doing animations on the page.
+                    All of this is possible with advanced styling and more capabilities that CSS now offers.
+                </p>
+                <p class="new-border">
+                    Here is a link to more CSS work done with SCSS for a zen garden project. 
+                    <a href="https://watercable76.github.io/zen_garden_final/">Zen Garden</a>
+                </p>
             </div>
         </div>
         <div class="notes">
-            <h2>Recursion Functions</h2>
+            <h2>SVG</h2>
             <p>
-                Functions that call themselves inside of their function declarations. You can go through a BST to access data quicker and 
-                perform equations at O(log n) speed. This performance is incredible and can speed up operations and make code more 
-                efficient.
+                SVG's are vector based graphics that can expand or compact without losing quality of the object. For example,
+                major icons or symbols from companies use SVG's for their icons so they can be used in any page that requires one.
+                You can draw an SVG with css, or you can just put it straight into the page. 
             </p>
+            <div>
+                <svg class="card">
+                    <defs>
+                      <pattern id="mypattern" patternUnits="userSpaceOnUse" x="0" y="0" width="50" height="50">
+                        <polygon id="p1" points="15,15 25,25 25,35 30,25" />
+                        <polygon id="p3" points="15,15 25,25 25,35 30,25" />
+                      </pattern>
+                    </defs>
+                  
+                    <rect id="full-pattern" x="0" y="0" fill="url(#mypattern)" stroke-width="1" />
+                    <polygon id="p2" points="200,30 210,70 200,90 190,70" />
+                    <path d="M50 20 A 40 40 0 1 0 50 70 30 30 0 1 1 50 20z" stroke="black" stroke-width="2" fill="red" id="cresc-moon"/>
+                  </svg>
+            </div>
         </div>
         <div class="notes">
             <h2>Promises</h2>
