@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week09 Notes and Stuff</title>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- JS links -->
+    <script src="../scripts/link_generator.js"></script>
+    <script src="./week09-script.js"></script>
+</head>
+
+<body>
+    <header>
+        <ul id="linked-list"></ul>
+    </header>
+    <main>
+        <h1>Week09 Notes</h1>
+        <p>Notes from the week's lesson and review from old material</p>
+        <br>
+        <div class="notes">
+            <h2>DOM</h2>
+            <p>
+                The DOM is the Document Object Model, and is the way in which JS interacts with the web page. One thing is cookies
+                that can be set and used. Cookies store data, which can store users, sessions, and even gather analytical data.
+                Setting user data in a cookie can be easy, and the developer can set when the cookie will expire.
+            </p>
+            <p>
+                For example, when logging into a website, there will be a time limit, and after that time limit, the user will have to
+                log in again. A timestamp is set, and then after it hits the designated time in the future, the cookie expires, and 
+                the site will prompt the user to log in again.
+            </p>
+        </div>
+        <div class="notes">
+            <h2>Recursion Functions</h2>
+            <p>
+                Functions that call themselves inside of their function declarations. You can go through a BST to access data quicker and 
+                perform equations at O(log n) speed. This performance is incredible and can speed up operations and make code more 
+                efficient.
+            </p>
+        </div>
+        <div class="notes">
+            <h2>Promises</h2>
+            <p>
+                Promises are chained function calls that can be very long. For example, getting data from MongoDB requires a few things.
+                First, the user credentials must be met, and a connection must be made. Then, the user can query for the data they want,
+                like getting a list of users that are stored. Then, you can return that data in a callback and either store it or keep
+                it in the file you are calling it from.
+            </p>
+        </div>
+        <div class="notes">
+            <h2>Ajax</h2>
+            <p>
+                API work includes calling data, and then returning a data set. Data can be modeled, and when the data is returned,
+                it will be passed into that model. The developer can set parameters, certain data flow, and so forth. The important
+                thing is the data is returned, either with a promise or with exceptions, and then the data is used in the project.
+            </p>
+            <p>
+                In the case with MongoDB, the user queries for something, and a data set is returned. The data is sent to the page,
+                and the page is filled with content. This is an example of the API work that occurs in the backend of a project.
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>
