@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- JS links -->
+    <script src="../scripts/link_generator.js"></script>
+    <script src="./final-script.js"></script>
+</head>
+
+<body>
+    <header>
+        <ul id="linked-list"></ul>
+    </header>
+    <main>
+        <h1>Final Project</h1>
+        <br>
+        <h2>Todos</h2>
+        <br>
+        <div class="card">
+            <ul class="task-list" id="task-list"></ul>
+            <div class="card__task-filter">
+                <p class="task-info"><span id="task-qty">0</span> of tasks left</p>
+                <div class="card__active-items">
+                    <span id="task-all" class="active">All</span>
+                    <span id="task-active">Active</span>
+                    <span id="task-inactive">Inactive</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="input-container">
+            <input class="task-input" id="task" type="text" placeholder="Enter your task here">
+            <button type="button" onclick="addNewTask()">+</button>
+            <button type="button" onclick="clearTasks()">Clear Tasks</button>
+        </div>
+    </footer>
+</body>
+
+</html>
