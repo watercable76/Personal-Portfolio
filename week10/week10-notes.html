@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week10 Notes and Stuff</title>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- JS links -->
+    <script src="../scripts/link_generator.js"></script>
+</head>
+
+<body>
+    <header>
+        <ul id="linked-list"></ul>
+    </header>
+    <main>
+        <h1>Week10 Notes</h1>
+        <p>Notes from the week's lesson and review from old material</p>
+        <br>
+        <div class="notes">
+            <h2>Forms</h2>
+            <p>
+                Forms are the principal way to gather data or input from users, and then do something. We can verify types of input through a 
+                variety of methods. We can verify with JS as users input, when they submit, or even with the backend data control that ensures 
+                data is up to standard. It depends on company standards and what the architects and UI/UX designers decide on.
+            </p>
+            <p>
+                We can set inputs to be red, either outlined or filled, and not allow people to submit or go on until the user inputs the correct data. 
+                The benefit of this is the user knows there is an issue with their input before they continue. For example, entering the wrong email
+                for an account will bring up an error message on the page, clear the input and then allow the user to input their email again.
+            </p>
+        </div>
+        <div class="notes">
+            <h2>Fetch</h2>
+            <p>
+                Fetch will do two things: 
+                <ol>
+                    <li>Get data from the website provided and return a promise</li>
+                    <li>As soon as the server responds with headers, the promise will be ok, and data returned</li>
+                </ol>
+            </p>
+            <p>
+                Getting this data will allow applications to display it in pretty format to users. If I wanted to query all of the weather
+                data in the area and show it to users, I could do that. The important thing is taking the data, formatting it to be what is needed,
+                and then outputting it to the user.
+            </p>
+            <p>
+                For a developer, the way to do this is as follow.
+                <ol>
+                    <li>Fetch the data, and use a .then() to return the data into a new data set.</li>
+                    <li>With the data set, put data into a model or formatter to make it to what is needed</li>
+                    <li>Return data set and set data into page</li>
+                </ol>
+
+                This could look like this: 
+            </p>
+            <pre>var data = fetch(url)
+            .then(result => result.json())
+            .then(data => console.log(data))</pre>
+        </div>
+    </main>
+</body>
+
+</html>
